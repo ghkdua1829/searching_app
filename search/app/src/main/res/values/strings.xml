@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Search</string>
+    <string name="blog_title">블로그 제목 : </string>
+    <string name="postdate">작성 날짜 : </string>
+    <string name="blog_description">블로그 내용 : </string>
+    <string name="blog_link">블로그 링크 : </string>
+</resources>
