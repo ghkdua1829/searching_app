@@ -201,11 +201,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (previous_marker != null)
             previous_marker.clear();//지역정보 마커 클리어
 
+        Log.e("위도정보","위도"+location.latitude+"경도"+location.longitude);
         new NRPlaces.Builder()
                 .listener(MainActivity.this)
-                .key("AIzaSyCTK2We-ojsdTR0ilgOT18J4Z7faG1F2v4")
+                .key("AIzaSyD-sepdf3BWnG8K4j-9Q8fTegoAlMQwdkw")
                 .latlng(location.latitude, location.longitude)//현재 위치
-                .radius(500) //500 미터 내에서 검색
+                .radius(1000) //500 미터 내에서 검색
                 .type(PlaceType.RESTAURANT)//음식점
                 .build()
                 .execute();
